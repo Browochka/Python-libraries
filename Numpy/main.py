@@ -19,6 +19,15 @@ import numpy as np
 
 # np.insert -вставить значение
 
-j=np.array([1,2,3,4,5,10,15,3,2,11])
-print(j[(j>5) & (j < 12)])
+#j=np.array([1,2,3,4,5,10,15,3,2,11])
+#print(j[(j>5) & (j < 12)])
+
+"МАТРИЦЫ"
+
+matrix=np.array([[(1,2,3)],[(3,3,3)]],dtype=np.float64)
+#secomatrix=np.array([(1,2,3),(3,3,3)],dtype=np.float64)
+#matrix.shape-указывает размерность
+#reshape- транспонирует, объединяет
+#np.eye(5) единичная матрица NxN
+print(matrix.reshape(3,2))
 
